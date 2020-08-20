@@ -1,0 +1,18 @@
+body {
+    background-image: url(spyro.png);
+    text-align: center;
+}
+
+h1 {
+    color: antiquewhite;
+}
+
+.footer {
+    color: antiquewhite;
+    bottom: 0%;
+    position: fixed;
+}
+
+.rewards {
+    color: brown;
+}
