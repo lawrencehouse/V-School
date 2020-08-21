@@ -196,3 +196,42 @@ body {
     width: 70px;
     border-radius: 50%;
 }
+
+.niger-orange {
+    background-color: orangered;
+    color: orangered;
+    width: 145px;
+    padding: 10px;
+    margin-top: 155px;
+    position: relative;
+}
+
+.niger-white {
+    background-color: white;
+    color: white;
+    width: 145px;
+    padding: 10px;
+    position: relative;
+}
+
+.niger-circle {
+    background-color: orangered;
+    color: orangered;
+    text-align: center;
+    position: absolute;
+    top: 990px;
+    font-size: 10px;
+    margin-left: 55px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.niger-green {
+    background-color: green;
+    color: green;
+    width: 145px;
+    padding: 10px;
+    position: absolute;
+}
