@@ -95,3 +95,95 @@
     padding: 5%;
     margin-left: 1%;
 }
+
+@media (max-width: 768px) {
+    .light-pink {
+        display: inline-block;
+        background-color: #F5C6D6;
+        color: #F5C6D6;
+        width: 92%;
+        padding: 3%;
+        margin-top: 5%;
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+    
+    .dp1 {
+        display: inline-block;
+        background-color: #EE2E84;
+        color: #EE2E84;
+        width: 92%;
+        border-top: 2px solid white;
+        padding: 3%;
+        margin-left: 4%;
+    }
+    
+    .dp2 {
+        display: inline-block;
+        background-color: #EE2E84;
+        color: #EE2E84;
+        width: 92%;
+        border-top: 2px solid white;
+        padding: 3%;
+        margin-left: 4%;
+    }
+    
+    .dp3 {
+        display: inline-block;
+        background-color: #EE2E84;
+        color: #EE2E84;
+        width: 92%;
+        border-top: 2px solid white;
+        padding: 3%;
+        margin-left: 4%;
+    }
+    
+    .dp4 {
+        display: inline-block;
+        background-color: #EE2E84;
+        color: #EE2E84;
+        width: 92%;
+        border-top: 2px solid white;
+        padding: 3%;
+        margin-left: 4%;
+    }
+    
+    .b1 {
+        display: inline-block;
+        background-color: #85CFD8;
+        color: #85CFD8;
+        width: 92%;
+        border-top: 2px solid white;
+        padding: 3%;
+        margin-left: 4%;
+    }
+    
+    .b2 {
+        display: inline-block;
+        background-color: #85CFD8;
+        color: #85CFD8;
+        width: 92%;
+        border-top: 2px solid white;
+        padding: 3%;
+        margin-left: 4%;
+    }
+    
+    .g1 {
+        display: inline-block;
+        background-color: #8DC63F;
+        color: #8DC63F;
+        width: 92%;
+        border-top: 2px solid white;
+        padding: 3%;
+        margin-left: 4%;
+    }
+    
+    .o1 {
+        display: inline-block;
+        background-color: #E76E34;
+        color: #E76E34;
+        width: 92%;
+        border-top: 2px solid white;
+        padding: 3%;
+        margin-left: 4%;
+    }
