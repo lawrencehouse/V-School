@@ -1,32 +1,97 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box; 
     font-size: 0px;
 }
 
 .light-pink {
+    display: inline-block;
     background-color: #F5C6D6;
     color: #F5C6D6;
-    border-bottom: 6px solid white;
+    width: 92%;
     padding: 5%;
     margin-top: 5%;
     margin-right: 4%;
     margin-left: 4%;
-    margin-bottom: 3%;
 }
 
 .dp1 {
+    display: inline-block;
     background-color: #EE2E84;
     color: #EE2E84;
-    border-right: 6px solid white;
-    padding: 3%;
-    margin-right: 4%;
+    width: 22%;
+    border-top: 6px solid white;
+    padding: 5%;
     margin-left: 4%;
 }
 
 .dp2 {
+    display: inline-block;
     background-color: #EE2E84;
     color: #EE2E84;
-    padding: 3%;
-    margin-right: 4%;
+    width: 22%;
+    border-top: 6px solid white;
+    padding: 5%;
+    margin-left: 1%;
+}
+
+.dp3 {
+    display: inline-block;
+    background-color: #EE2E84;
+    color: #EE2E84;
+    width: 23%;
+    border-top: 6px solid white;
+    padding: 5%;
+    margin-left: 1%;
+}
+
+.dp4 {
+    display: inline-block;
+    background-color: #EE2E84;
+    color: #EE2E84;
+    width: 22%;
+    border-top: 6px solid white;
+    padding: 5%;
+    margin-left: 1%;
+}
+
+.b1 {
+    display: inline-block;
+    background-color: #85CFD8;
+    color: #85CFD8;
+    width: 45%;
+    border-top: 6px solid white;
+    padding: 5%;
     margin-left: 4%;
+}
+
+.b2 {
+    display: inline-block;
+    background-color: #85CFD8;
+    color: #85CFD8;
+    width: 46%;
+    border-top: 6px solid white;
+    padding: 5%;
+    margin-left: 1%;
+}
+
+.g1 {
+    display: inline-block;
+    background-color: #8DC63F;
+    color: #8DC63F;
+    width: 68%;
+    border-top: 6px solid white;
+    padding: 5%;
+    margin-left: 4%;
+}
+
+.o1 {
+    display: inline-block;
+    background-color: #E76E34;
+    color: #E76E34;
+    width: 23%;
+    border-top: 6px solid white;
+    padding: 5%;
+    margin-left: 1%;
 }
