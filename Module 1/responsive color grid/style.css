@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box; 
+    font-size: 0px;
+}
+
+.light-pink {
+    background-color: #F5C6D6;
+    color: #F5C6D6;
+    border-bottom: 6px solid white;
+    padding: 5%;
+    margin-top: 5%;
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-bottom: 3%;
+}
+
+.dp1 {
+    background-color: #EE2E84;
+    color: #EE2E84;
+    border-right: 6px solid white;
+    padding: 3%;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+
+.dp2 {
+    background-color: #EE2E84;
+    color: #EE2E84;
+    padding: 3%;
+    margin-right: 4%;
+    margin-left: 4%;
+}
