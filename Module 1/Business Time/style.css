@@ -1,0 +1,19 @@
+.header {
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    background: url(header-background.png);
+    background-size: cover;
+}
+
+.navi {
+    display: flex;
+}
+
+.navi > div {
+    flex: 1;
+}
+
+.title {
+    font-family: serif;
+}
