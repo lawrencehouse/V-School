@@ -6,8 +6,12 @@
   }
   
   html, body {
-    background-color: black;
+    background-color: rgb(39, 35, 35);
     margin: 10px;
+  }
+
+  p {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   .navi > div:nth-child(1) {

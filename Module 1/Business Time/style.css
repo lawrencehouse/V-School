@@ -1,4 +1,8 @@
-.header {
+/* .body {
+    display: inline-block;
+} */
+
+header {
     color: white;
     border: 2px solid white;
     padding: 10px;
@@ -16,4 +20,16 @@
 
 .title {
     font-family: serif;
+}
+
+.body {
+    display: block;
+}
+
+.images {
+    display: inline-block;
+}
+
+.img1 {
+    margin-left: 30%;
 }
