@@ -14,7 +14,7 @@
       font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
-  .navi > div:nth-child(1) {
+  /* .navi > div:nth-child(1) {
     	
   }
   
@@ -36,7 +36,7 @@
 
   .navi > div:nth-child(6) {
     
-  }
+  } */
 
   @media (max-width: 710px) {
     .navi > div {
