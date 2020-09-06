@@ -21,7 +21,7 @@ function WhoWins(is_there_kryptonite, EnemyName) {
 
 for (var i = 0; i < Enemies.length; i++) {
     var is_there_kryptonite = []
-    if (i%2 === 0) {
+    if (i % 2 === 0) {
         is_there_kryptonite = true;
     } else {
         is_there_kryptonite = false;
@@ -36,14 +36,14 @@ function HowAttractedIsLoisLaneToMe() {
 
 console.log(HowAttractedIsLoisLaneToMe());
 
-var clarkKent = true;
+var ClarkKent = true;
 var superman = false;
 
-while (clarkKent) {
+while (ClarkKent) {
     console.log("I'm just a nerdy columnist");
-    var phoneBoothQuickChange = Math.random();
-    if (phoneBoothQuickChange >= 0.5) {
-        clarkKent = false;
+    var PhoneBoothQuickChange = Math.random();
+    if (PhoneBoothQuickChange >= 0.5) {
+        ClarkKent = false;
         superman = true;
         console.log("Now I'm Superman!");
     }
