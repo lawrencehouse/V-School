@@ -6,8 +6,8 @@ header1 = document.querySelector('#header')
 h1head = document.createElement('h1')
 h3head = document.createElement('h3')
 span1 = document.createElement('span')
-messageleft = document.querySelectorAll('.message left')
-messageright = document.querySelectorAll('.message right')
+messageleft = document.getElementsByClassName('left')
+messageright = document.getElementsByClassName('right')
 
 header1.classList.add('header')
 h1head.innerHTML = '<b>JavaScript Made This!!</b>'
@@ -24,5 +24,7 @@ clear.addEventListener('click', function() {
     messages.innerHTML = ''
 })
 
-messageleft.innerText = 'Are you happy?'
-messageright.innerText = `Yes I'm happy!`
+messageleft[0].innerText = 'Are you happy?'
+messageright[0].innerText = `Yes I'm happy!`
+messageleft[1].innerText = `Good, lets go to the beach!`
+messageright[1].innerText = `Sounds like a plan!`
