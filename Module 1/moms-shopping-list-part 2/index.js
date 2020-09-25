@@ -1,5 +1,5 @@
 const form = document['addItem']
-list = document.querySelector('ul#list')
+list = document.querySelector('ul')
 const item = document.querySelector('#title')
 
 
@@ -10,6 +10,7 @@ form.addEventListener('submit', e => {
     const xbtn = document.createElement('button')
     new_title.innerText = form.title.value
     editbtn.innerText = 'edit'
+    xbtn.className = 'erase'
     xbtn.innerText = 'X'
     const new_li = document.createElement('li')
     list.append(new_li)
@@ -17,4 +18,13 @@ form.addEventListener('submit', e => {
     list.lastChild.append(editbtn)
     list.lastChild.append(' ')
     list.lastChild.append(xbtn)
+
+    const erase = document.getElementsByClassName('erase')
+    itemlist = list.children.length
+    for (i = 0; i < erase.length; i++) {
+        erase[i].addEventListener('click', e => {
+            e.target.parentNode.remove()
+        })
+    }
+    
 })
