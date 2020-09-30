@@ -50,5 +50,9 @@ var fruit = ["banana", "orange", "apple", "kiwi", "pear", "peach"]
 newfruit = []
 
 for (i = 0; i < fruit.length; i++) {
-    
+    if (i % 2 === 1) {
+        newfruit.push(fruit[i])
+    }
 }
+
+console.log(newfruit)
