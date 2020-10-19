@@ -1,3 +1,24 @@
+while(player.health > 0){
+    walk();
+}
+
+function walk(){
+    if(Math.random() > .25){
+        fight()
+    } else {
+        console.log("one foot in front of the other")
+    }
+}
+function fight(){
+    // enemyCreation();
+    const response = readline.question("would you like to run or fight?")
+    if (response === "run"){
+        console.log("run()");
+    } else {
+        console.log("enemyAttack()");
+    }
+}
+
 function walk(){
     /* ask user to push "w" to walk
     if (user pushed w){
@@ -36,7 +57,7 @@ function attackEnemy(){
     if (damage is 35-40){
         console.log('Critical Hit!')
         enemyHealth -+ damage
-    }
+    }*/
 }
 
 function enemyAttack(){
@@ -54,3 +75,4 @@ function enemyDie(){
 function enemyCreation(){
 
 }
+
