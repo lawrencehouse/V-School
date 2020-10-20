@@ -1,11 +1,13 @@
 function enemyCreation(){
     var spawn = Math.random()
-    if (spawn < .33) {
-        console.log('')
-    } else if (spawn < .66) {
-        console.log('test1')
+    if (spawn < .40) {
+        console.log('You stumble upon a Fiend')
+    } else if (spawn < .73) {
+        console.log('You stumble upon a Dire Fiend')
+    } else if (spawn < .95) {
+        console.log('You stumble upon a Vile Fiend')
     } else {
-        console.log('test2')
+        console.log('You stumble upon a DIRE VILE FIEND MURDERGOD')
     }
 }
 
