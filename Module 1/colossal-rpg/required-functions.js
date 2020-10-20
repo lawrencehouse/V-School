@@ -1,78 +1,85 @@
-while(player.health > 0){
-    walk();
-}
+const readline = require('readline-sync')
 
-function walk(){
-    if(Math.random() > .25){
-        fight()
-    } else {
-        console.log("one foot in front of the other")
-    }
-}
-function fight(){
-    // enemyCreation();
-    const response = readline.question("would you like to run or fight?")
-    if (response === "run"){
-        console.log("run()");
-    } else {
-        console.log("enemyAttack()");
-    }
-}
+// player = {
+//     health: 100
+// }
 
-function walk(){
-    /* ask user to push "w" to walk
-    if (user pushed w){
-        if(1 in 4){
-            fight();
-        } else {
-            //tell user they didn't run into a monster
-            //****THIS PART IS IMPORTANT. DO NOT CALL WALK()****
-        }
-    } else {
-        tell user what's in their inventory, and their health, and then tell them to push w to walk */
-}
+// while(player.health > 0){
+//     walk();
+// }
 
-function run(){
-    if(1 in 2){
-        //tell user that they successfully got away and can continue walking
-        //****THIS PART IS IMPORTANT. DO NOT CALL WALK()****
-    } else {
-        //tell user they were not able to run
-        //****THIS PART IS IMPORTANT. DO NOT CALL fight() You could, however, call one of the attack functions****
-    }
-}
+// function walk(w){
+//     w = readline.keyIn(`Push 'w' to walk`, {limit: '$<w>'})
+//     if (w == 'w') {
+//         if(Math.random() > .25){
+//             fight()
+//         } else {
+//             console.log("one foot in front of the other")
+//         }
+//     } else {
+//         console.log(`You need to use 'w' to walk `)
+//     }
+// }
+// function fight(){
+//     // enemyCreation();
+//     const response = readline.question("would you like to run or fight?")
+//     if (response === "run"){
+//         console.log("run()");
+//     } else {
+//         console.log("enemyAttack()");
+//     }
+// }
 
-function fight(){
-    /* ask user to either fight or run
-    enemyCreation()
-    if (user is trying to run){
-        run()
-    } else {
-        attackEnemy()
-    } */
-}
+// function walk(){
+//     /* ask user to push "w" to walk
+//     if (user pushed w){
+//         if(1 in 4){
+//             fight();
+//         } else {
+//             //tell user they didn't run into a monster
+//             //****THIS PART IS IMPORTANT. DO NOT CALL WALK()****
+//         }
+//     } else {
+//         tell user what's in their inventory, and their health, and then tell them to push w to walk */
+// }
 
-function attackEnemy(){
-    /* user deals random damage to enemy between a min and max amount - 20-40?
-    if (damage is 35-40){
-        console.log('Critical Hit!')
-        enemyHealth -+ damage
-    }*/
-}
+// function run(){
+//     if(1 in 2){
+//         //tell user that they successfully got away and can continue walking
+//         //****THIS PART IS IMPORTANT. DO NOT CALL WALK()****
+//     } else {
+//         //tell user they were not able to run
+//         //****THIS PART IS IMPORTANT. DO NOT CALL fight() You could, however, call one of the attack functions****
+//     }
+// }
 
-function enemyAttack(){
+// function fight(){
+//     /* ask user to either fight or run
+//     enemyCreation()
+//     if (user is trying to run){
+//         run()
+//     } else {
+//         attackEnemy()
+//     } */
+// }
 
-}
+// function attackEnemy(){
+//     /* user deals random damage to enemy between a min and max amount - 20-40?
+//     if (damage is 35-40){
+//         console.log('Critical Hit!')
+//         enemyHealth -+ damage
+//     }*/
+// }
 
-function die(){
+// function enemyAttack(){
 
-}
+// }
 
-function enemyDie(){
+// function die(){
 
-}
+// }
 
-function enemyCreation(){
+// function enemyDie(){
 
-}
+// }
 
