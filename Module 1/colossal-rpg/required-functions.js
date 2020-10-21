@@ -1,8 +1,13 @@
 const readline = require('readline-sync')
 
-// player = {
-//     health: 100
-// }
+console.log(`Welcome to 'The Violent Road to Death'! Be sure to follow the instructions and pray for luck, because you only get one life. . .`)
+
+playername = readline.question('What is your name?')
+
+player = {
+    name: playername,
+    health: 100
+}
 
 // while(player.health > 0){
 //     walk();
@@ -11,7 +16,7 @@ const readline = require('readline-sync')
 // function walk(w){
 //     w = readline.keyIn(`Push 'w' to walk`, {limit: '$<w>'})
 //     if (w == 'w') {
-//         if(Math.random() > .25){
+//         if(Math.random() > .75){
 //             fight()
 //         } else {
 //             console.log("one foot in front of the other")
@@ -20,15 +25,15 @@ const readline = require('readline-sync')
 //         console.log(`You need to use 'w' to walk `)
 //     }
 // }
-// function fight(){
-//     // enemyCreation();
-//     const response = readline.question("would you like to run or fight?")
-//     if (response === "run"){
-//         console.log("run()");
-//     } else {
-//         console.log("enemyAttack()");
-//     }
-// }
+function fight(){
+    // enemyCreation();
+    const response = readline.question("would you like to run or fight?")
+    if (response === "run"){
+        console.log("run()");
+    } else {
+        console.log("enemyAttack()");
+    }
+}
 
 // function walk(){
 //     /* ask user to push "w" to walk
