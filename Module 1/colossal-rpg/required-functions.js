@@ -26,7 +26,7 @@ player = {
 //     }
 // }
 function fight(){
-    // enemyCreation();
+    enemyCreation();
     const response = readline.question("would you like to run or fight?")
     if (response === "run"){
         console.log("run()");
