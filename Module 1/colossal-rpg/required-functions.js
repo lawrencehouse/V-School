@@ -6,32 +6,73 @@ playername = readline.question('What is your name?')
 
 player = {
     name: playername,
-    health: 100
+    health: 100,
+    damage: 10 + Math.random()*5
 }
 
-// while(player.health > 0){
-//     walk();
-// }
+function enemyCreation(){
+    var spawn = Math.random()
+    if (spawn < .40) {
+        console.log('You stumble upon a Fiend')
+        currentEnemy = {
+            name: 'Fiend',
+            health: 100,
+            damage: 5 + Math.random()*5
+        }
+    } else if (spawn < .75) {
+        console.log('You stumble upon a Dire Fiend')
+        currentEnemy = {
+            name: 'Dire Fiend',
+            health: 100,
+            damage: 10 + Math.random()*5
+        }
+    } else if (spawn < .95) {
+        console.log('You stumble upon a Vile Fiend')
+        currentEnemy = {
+            name: 'Vile Fiend',
+            health: 100,
+            damage: 15
+        }
+    } else {
+        console.log('You stumble upon a DIRE VILE FIEND MURDERGOD')
+        currentEnemy = {
+            name: 'DIRE VILE FIEND MURDERGOD',
+            health: 100,
+            damage: 100
+        }
+    }
+}
 
-// function walk(w){
-//     w = readline.keyIn(`Push 'w' to walk`, {limit: '$<w>'})
-//     if (w == 'w') {
-//         if(Math.random() > .75){
-//             fight()
-//         } else {
-//             console.log("one foot in front of the other")
-//         }
-//     } else {
-//         console.log(`You need to use 'w' to walk `)
-//     }
-// }
-function fight(){
+function enemyAttack(){
+    player.health -+ currentEnemy.damage
+}
+
+while(player.health > 0){
+    walk();
+}
+
+function walk(w){
+    w = readline.keyIn(`Push 'w' to walk or 'p' for your inventory`, {limit: '$<w,p>'})
+    if (w == 'w') {
+        if(Math.random() > .75){
+            fight()
+        } else {
+            console.log("one foot in front of the other")
+        }
+    } else {
+        console.log(`You need to use 'w' to walk `)
+    }
+}
+
+function fight() {
     enemyCreation();
     const response = readline.question("would you like to run or fight?")
-    if (response === "run"){
-        console.log("run()");
-    } else {
-        console.log("enemyAttack()");
+    while (currentEnemy.health > 0) {
+        if (response === "run"){
+            run()
+        } else {
+            attackEnemy()
+        }
     }
 }
 
@@ -68,23 +109,20 @@ function fight(){
 //     } */
 // }
 
-// function attackEnemy(){
-//     /* user deals random damage to enemy between a min and max amount - 20-40?
-//     if (damage is 35-40){
-//         console.log('Critical Hit!')
-//         enemyHealth -+ damage
-//     }*/
-// }
-
-// function enemyAttack(){
-
-// }
+function attackEnemy(){
+    currentEnemy.health -+ player.damage
+    if (player.damage == 15) {
+        console.log('Critical Hit!')
+    }
+}
 
 // function die(){
 
 // }
 
-// function enemyDie(){
-
-// }
+function enemyDie(){
+    if (currentEnemy.health == 0) {
+        
+    }
+}
 
