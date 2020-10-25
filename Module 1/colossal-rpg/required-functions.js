@@ -7,7 +7,8 @@ playername = readline.question('What is your name?')
 player = {
     name: playername,
     health: 100,
-    damage: 10 + Math.random()*5
+    damage: 10 + Math.random()*5,
+    inventory: {}
 }
 
 function enemyCreation(){
@@ -60,19 +61,21 @@ function walk(w){
             console.log("one foot in front of the other")
         }
     } else {
-        console.log(`You need to use 'w' to walk `)
+        console.log(player.name + player.health + player.inventory)
     }
 }
 
 function fight() {
-    enemyCreation();
-    const response = readline.question("would you like to run or fight?")
-    while (currentEnemy.health > 0) {
+    enemyCreation()
+    if (currentEnemy.health > 0) {
+        const response = readline.question("would you like to run or fight?")
         if (response === "run"){
             run()
         } else {
             attackEnemy()
         }
+    } else {
+        enemyDie()
     }
 }
 
@@ -89,15 +92,15 @@ function fight() {
 //         tell user what's in their inventory, and their health, and then tell them to push w to walk */
 // }
 
-// function run(){
-//     if(1 in 2){
-//         //tell user that they successfully got away and can continue walking
-//         //****THIS PART IS IMPORTANT. DO NOT CALL WALK()****
-//     } else {
-//         //tell user they were not able to run
-//         //****THIS PART IS IMPORTANT. DO NOT CALL fight() You could, however, call one of the attack functions****
-//     }
-// }
+function run(){
+    if(Math.random() > .5){
+        //tell user that they successfully got away and can continue walking
+        //****THIS PART IS IMPORTANT. DO NOT CALL WALK()****
+    } else {
+        //tell user they were not able to run
+        //****THIS PART IS IMPORTANT. DO NOT CALL fight() You could, however, call one of the attack functions****
+    }
+}
 
 // function fight(){
 //     /* ask user to either fight or run
@@ -122,7 +125,8 @@ function attackEnemy(){
 
 function enemyDie(){
     if (currentEnemy.health == 0) {
-        
+        console.log(`You knocked ${currentEnemy.name}s' block off!!!`)
+
     }
 }
 
