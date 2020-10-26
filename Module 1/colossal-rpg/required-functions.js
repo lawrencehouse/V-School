@@ -2,7 +2,7 @@ const readline = require('readline-sync')
 
 console.log(`Welcome to 'The Violent Road to Death'! Be sure to follow the instructions and pray for luck, because you only get one life. . .`)
 
-playername = readline.question('What is your name?')
+playername = readline.question('What is your name?\n\n')
 
 player = {
     name: playername,
@@ -53,23 +53,25 @@ while(player.health > 0){
 }
 
 function walk(w){
-    w = readline.keyIn(`Push 'w' to walk or 'p' for your inventory`, {limit: '$<w,p>'})
+    w = readline.keyIn(`\nPush 'w' to walk or 'p' for your inventory `, {limit: '$<w,p>'})
     if (w == 'w') {
         if(Math.random() > .75){
+            console.log('\n')
             fight()
         } else {
-            console.log("one foot in front of the other")
+            console.log("\none foot in front of the other")
         }
     } else {
-        console.log(player.name + player.health + player.inventory)
+        console.log('STATUS: \n')
+        console.log(player.name + '\n' + player.health + '\n' + player.inventory)
     }
 }
 
 function fight() {
     enemyCreation()
     if (currentEnemy.health > 0) {
-        const response = readline.question("would you like to run or fight?")
-        if (response === "run"){
+        const response = readline.question("\nwould you like to run or fight? ")
+        if (response == "run"){
             run()
         } else {
             attackEnemy()
@@ -94,23 +96,17 @@ function fight() {
 
 function run(){
     if(Math.random() > .5){
+        console.log(`You succeed in escaping the ${currentEnemy.name}! `)
         //tell user that they successfully got away and can continue walking
         //****THIS PART IS IMPORTANT. DO NOT CALL WALK()****
     } else {
+        console.log(`You fail to escape and get hit by the ${currentEnemy.name}! `)
+        enemyAttack()
         //tell user they were not able to run
         //****THIS PART IS IMPORTANT. DO NOT CALL fight() You could, however, call one of the attack functions****
     }
 }
 
-// function fight(){
-//     /* ask user to either fight or run
-//     enemyCreation()
-//     if (user is trying to run){
-//         run()
-//     } else {
-//         attackEnemy()
-//     } */
-// }
 
 function attackEnemy(){
     currentEnemy.health -+ player.damage
