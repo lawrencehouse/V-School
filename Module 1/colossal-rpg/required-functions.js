@@ -45,7 +45,7 @@ function enemyCreation(){
 }
 
 function enemyAttack(){
-    player.health -+ currentEnemy.damage
+    player.health -= currentEnemy.damage
 }
 
 while(player.health > 0){
@@ -59,7 +59,7 @@ function walk(w){
             console.log('\n')
             fight()
         } else {
-            console.log("\none foot in front of the other")
+            console.log("\none foot in front of the other . . . luckily we didn't run into anything")
         }
     } else {
         console.log('STATUS: \n')
@@ -69,33 +69,24 @@ function walk(w){
 
 function fight() {
     enemyCreation()
-    if (currentEnemy.health > 0) {
+    while (currentEnemy.health >= 0) {
+        if (currentEnemy.health <= 0) {
+            enemyDie()
+            return
+        }
         const response = readline.question("\nwould you like to run or fight? ")
         if (response == "run"){
             run()
         } else {
             attackEnemy()
+            console.log(`\n ${currentEnemy.health}`)
         }
-    } else {
-        enemyDie()
     }
 }
 
-// function walk(){
-//     /* ask user to push "w" to walk
-//     if (user pushed w){
-//         if(1 in 4){
-//             fight();
-//         } else {
-//             //tell user they didn't run into a monster
-//             //****THIS PART IS IMPORTANT. DO NOT CALL WALK()****
-//         }
-//     } else {
-//         tell user what's in their inventory, and their health, and then tell them to push w to walk */
-// }
-
 function run(){
     if(Math.random() > .5){
+        currentEnemy.health = 0
         console.log(`You succeed in escaping the ${currentEnemy.name}! `)
         //tell user that they successfully got away and can continue walking
         //****THIS PART IS IMPORTANT. DO NOT CALL WALK()****
@@ -109,7 +100,7 @@ function run(){
 
 
 function attackEnemy(){
-    currentEnemy.health -+ player.damage
+    currentEnemy.health -= player.damage
     if (player.damage == 15) {
         console.log('Critical Hit!')
     }
@@ -120,7 +111,7 @@ function attackEnemy(){
 // }
 
 function enemyDie(){
-    if (currentEnemy.health == 0) {
+    if (currentEnemy.health <= 0) {
         console.log(`You knocked ${currentEnemy.name}s' block off!!!`)
 
     }
