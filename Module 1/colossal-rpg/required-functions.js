@@ -9,21 +9,21 @@ player = {
     name: playername,
     health: 100,
     damage: 10 + Math.floor(Math.random()*5),
-    inventory: [{}]
+    inventory: []
 }
 
-itemDrops = [{
-    testitem: {
+itemDrops = [
+    {
         name: 'Testitem',
         description: 'A test for something neat, just looks neat.',
         amount: 1
     },
-    testitem2: {
+    {
         name: 'Testitem2',
         description: 'A second test',
         amount: 1
     }
-}]
+]
 
 function enemyCreation(){
     var spawn = Math.random()
@@ -78,7 +78,7 @@ function walk(w){
         }
     } else {
         console.log('STATUS: \n')
-        console.log(player.name + '\n' + player.health + '\n' + player.inventory[0])
+        console.log(player.name + '\n' + player.health + '\n' + player.inventory)
     }
 }
 
@@ -146,7 +146,7 @@ function die(){
 function enemyDie(){
     if (currentEnemy.health <= 0) {
         console.log(`\nYou knocked ${currentEnemy.name}s' block off and continue on your way!`)
-        player.health += Math.floor(Math.random()*20)
+        player.health += Math.floor(Math.random()*25)
         player.inventory.push(itemDrops[Math.floor(Math.random())*1])
         
     }
