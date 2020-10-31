@@ -1,7 +1,7 @@
 const readline = require('readline-sync')
 
 
-console.log(`\nWelcome to 'The Violent Road to Death'! Be sure to follow the instructions and pray for luck, because you only get one life. . .`)
+console.log(`\nWelcome to 'The Violent Road to Death'! Be sure to follow the instructions and pray for luck, because you only get one life. . .\n`)
 
 playername = readline.question('What is your name?\n\n')
 
@@ -27,21 +27,21 @@ itemDrops = [
 
 function enemyCreation(){
     var spawn = Math.random()
-    if (spawn > .40) {
+    if (spawn < .60) {
         console.log('You stumble upon a Fiend')
         currentEnemy = {
             name: 'Fiend',
             health: 100,
             damage: 5 + Math.floor(Math.random()*5)
         }
-    } else if (spawn > .75) {
+    } else if (spawn < .80) {
         console.log('You stumble upon a Dire Fiend')
         currentEnemy = {
             name: 'Dire Fiend',
             health: 100,
             damage: 10 + Math.floor(Math.random()*5)
         }
-    } else if (spawn > .95) {
+    } else if (spawn < .95) {
         console.log('You stumble upon a Vile Fiend')
         currentEnemy = {
             name: 'Vile Fiend',
@@ -77,9 +77,22 @@ function walk(w){
             console.log("\none foot in front of the other . . . luckily we didn't run into anything")
         }
     } else {
-        console.log('STATUS: \n')
-        console.log(player.name + '\n' + player.health + '\n' + player.inventory)
+        console.log('\nSTATUS: \n')
+        console.log(`Name: ${player.name}\n` + `Health: ${player.health}\n` + `Inventory: ${itemList()}`)
     }
+}
+
+// player.inventory[0].name
+
+function itemList() {
+    if (player.inventory == 0) {
+        console.log(`Your backpack is empty!\n`)
+    } else {
+        for (i=0; i < player.inventory.length; i++) {
+            console.log(player.inventory[i].name)
+        }
+    }
+    
 }
 
 function fight() {
@@ -145,9 +158,14 @@ function die(){
 
 function enemyDie(){
     if (currentEnemy.health <= 0) {
-        console.log(`\nYou knocked ${currentEnemy.name}s' block off and continue on your way!`)
+        console.log(`\nYou knocked ${currentEnemy.name}s' block off and continue on your way!\n`)
         player.health += Math.floor(Math.random()*25)
-        player.inventory.push(itemDrops[Math.floor(Math.random())*1])
-        
+        player.inventory.push(itemDrops[getRandomIntInclusive(0, 1)])
     }
+}
+
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min)
+    max = Math.floor(max)
+    return Math.floor(Math.random() * (max - min + 1) + min)
 }
