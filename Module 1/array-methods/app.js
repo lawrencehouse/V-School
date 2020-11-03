@@ -9,7 +9,6 @@ food = fruit.concat(vegetables)
 food.splice(4, 2)
 food.reverse()
 
-
 // console.log(vegetables)
 // console.log(fruit)
 

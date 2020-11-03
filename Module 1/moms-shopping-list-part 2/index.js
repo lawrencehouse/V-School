@@ -1,4 +1,4 @@
-const form = document['addItem']
+const form = document.addItem
 list = document.querySelector('ul')
 const item = document.querySelector('#title')
 
@@ -19,12 +19,15 @@ form.addEventListener('submit', e => {
     list.lastChild.append(' ')
     list.lastChild.append(xbtn)
 
-    const erase = document.getElementsByClassName('erase')
-    itemlist = list.children.length
-    for (i = 0; i < erase.length; i++) {
-        erase[i].addEventListener('click', e => {
-            e.target.parentNode.remove()
-        })
-    }
+    // const erase = document.getElementsByClassName('erase')
+    // itemlist = list.children.length
+    // for (i = 0; i < erase.length; i++) {
+    //     erase[i].addEventListener('click', e => {
+    //         e.target.parentNode.remove()
+    //     })
+    // }
+    xbtn.addEventListener('click', e => {
+        new_li.remove()
+    })
     
 })
