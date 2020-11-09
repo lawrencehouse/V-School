@@ -6,7 +6,25 @@ formAdd.addEventListener('submit', e => {
     e.preventDefault()
     first = Math.floor(formAdd.first.value)
     second = Math.floor(formAdd.second.value)
-    const h1 = document.createElement('h1')
-    h1.textContent = 'Answer = ' + first + second
-    document.getElementsByTagName('body')[0].append(h1)
+    sum = first + second
+    answer = document.getElementById('answer')
+    answer.innerText = 'The sum is ' + sum
+})
+
+formSub.addEventListener('submit', e => {
+    e.preventDefault()
+    first = Math.floor(formSub.first.value)
+    second = Math.floor(formSub.second.value)
+    difference = first - second
+    answer = document.getElementById('answer')
+    answer.innerText = 'The difference is ' + difference
+})
+
+formMulti.addEventListener('submit', e => {
+    e.preventDefault()
+    first = Math.floor(formMulti.first.value)
+    second = Math.floor(formMulti.second.value)
+    product = first * second
+    answer = document.getElementById('answer')
+    answer.innerText = 'The product is ' + product
 })
