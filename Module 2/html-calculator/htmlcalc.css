@@ -1,8 +1,26 @@
+header {
+    background-color: gold;
+    width: 100%;
+    height: 10%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
 body {
     background-color: aqua;
 }
 
-#title {
+h1 {
     text-align: center;
 }
 
+form {
+    text-align: center;
+    padding: 2%;
+}
+
+footer {
+    background-color: gold;
+}
