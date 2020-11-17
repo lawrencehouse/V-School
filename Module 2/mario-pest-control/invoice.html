@@ -4,38 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pest Control Invoice</title>
+    <link rel="stylesheet" href="invoice.css">
 </head>
 <body>
     <header>
         <h1>Mario Pest Control</h1>
+        <h2>Enter in the amount of pests in each field.</h2>
     </header>
-    <p>Enter in the amount of pests in each field.</p>
+    <br>
+    <form name="baddies">
     <ul>
         <li>
-            Goomba <br>
-            null <br>
-            5 Coins
-            <input type="number" name="goom"> Caught
+            Goomba <br><br>
+            <img src="GoombaNSMB.webp" alt="" width="50px"> <br>
+            5 Coins each <br>
+            <input type="number" id="goom" size="3"> Caught
         </li>
+        <br>
         <li>
-            Bob-omb <br>
-            null <br>
-            7 Coins
-            <input type="number" name="bob"> Caught
+            Bob-omb <br><br>
+            <img src="Bob-omb_(MKWii).webp" alt="" width="50px"> <br>
+            7 Coins each <br>
+            <input type="number" id="bob" size="3"> Caught
         </li>
+        <br>
         <li>
-            Cheep-cheeps <br>
-            null <br>
-            11 Coins <br>
-            <input type="number" name="cheep"> Caught
+            Cheep-cheeps <br><br>
+            <img src="Cheep_Cheep.webp" alt="" width="50px"> <br>
+            11 Coins each <br>
+            <input type="number" id="cheep" size="3"> Caught
         </li>
+        <br>
     </ul>
+    </form>
 
-    Total: <h3 id="total"></h3>
+    <u>Total:</u> <h3 id="total"></h3>
     <footer>
-        pestparty@gmail.com<br>
-        mariopestcontrol.net<br>
-        25579 Sunshine St<br>
+        <h3>
+        <b>Contact US @</b> <br>
+        <b>pestparty@gmail.com</b> <br>
+        <b>mariopestcontrol.net</b> <br>
+        <b>25579 Sunshine St</b> <br>
+        </h3>   
     </footer>
+    <script src="invoice.js"></script>
 </body>
 </html>
