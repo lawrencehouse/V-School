@@ -2,8 +2,6 @@ body = document
 
 clickCounter = document.getElementById('clicks')
 
-
-
 clicks = Math.floor(sessionStorage.getItem('yourClicks'))
 
 body.addEventListener('click', e => {
@@ -13,5 +11,3 @@ body.addEventListener('click', e => {
 })
 
 clickCounter.innerText = clicks
-
-
