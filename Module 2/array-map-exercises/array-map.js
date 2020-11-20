@@ -1,37 +1,30 @@
 // 1. Make an array of numbers that are doubles of the first array
 
 function doubleNumbers(arr){
-    arr2 = []
-    arr.map(function(number){
-        arr2.push(number * 2)
-    })
-    return arr2
-  }
+  result = arr.map(number => number * 2)
+  return result
+}
   
 console.log(doubleNumbers([2, 5, 100])) // [4, 10, 200]
 
 // 2. Take an array of numbers and make them strings
 
 function stringItUp(arr){
-  arr2 = []
-  arr.map(function(number) {
-    arr2.push(number.toString())
-  })
-  return arr2
+  result = arr.map(number => number.toString())
+  return result
 }
 
 console.log(stringItUp([2, 5, 100])); // ["2", "5", "100"]
 
-// 3. Capitalize each of an array of names/
+// // 3. Capitalize each of an array of names/
 
 function capitalizeNames(arr){
-  arr2 = []
-  arr.map(function(name) {
+  result = arr.map(name => {
     firstletter = name.slice(0, 1)
     lastletters = name.slice(1)
-    arr2.push(firstletter.toUpperCase() + lastletters.toLowerCase())
+    return firstletter.toUpperCase() + lastletters.toLowerCase()
   })
-  return arr2
+  return result
 }
 
 console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"])); // ["John", "Jacob", "Jingleheimer", "Schmidt"]
@@ -39,11 +32,8 @@ console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"])); // [
 // 4. Make an array of strings of the names
 
 function namesOnly(arr){
-  arr2 = []
-  arr.map(function(person) {
-    arr2.push(person.name)
-  })
-  return arr2
+  result = arr.map(person => person.name)
+  return result
 }
 
 console.log(namesOnly([
@@ -73,15 +63,14 @@ console.log(namesOnly([
 // 5. Make an array of strings of the names saying whether or not they can go to The Matrix
 
 function makeStrings(arr){
-  arr2 = []
-  arr.map(function(person) {
+  result = arr.map(person => {
     if (person.age < 18) {
-      arr2.push(person.name + ' is under age!!')
+      return person.name + ' is under age!!'
     } else {
-      arr2.push(person.name + ' can go to The Matrix')
+      return person.name + ' can go to The Matrix'
     }
   }) 
-  return arr2
+  return result
 }
 
 console.log(makeStrings([
@@ -115,11 +104,8 @@ console.log(makeStrings([
 // 6. Make an array of the names in h1s, and the ages in h2s
 
 function readyToPutInTheDOM(arr){
-  arr2 = []
-  arr.map(function(person) {
-    arr2.push(`<h1>${person.name}</h1><h2>${person.age}</h2>`)
-  })
-  return arr2
+  result = arr.map(person => `<h1>${person.name}</h1><h2>${person.age}</h2>`)
+  return result
 }
 
 console.log(readyToPutInTheDOM([
