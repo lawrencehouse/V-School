@@ -1,7 +1,7 @@
 // 1. Turn an array of numbers into a total of all the numbers
 
 function total(arr) {
-    result = arr.reduce((a,b) => a + b)
+    result = arr.reduce((final,current) => final += current)
     return result
  }
  
@@ -10,7 +10,7 @@ function total(arr) {
  // 2. Turn an array of numbers into a long string of all those numbers.
 
  function stringConcat(arr) {
-    result = arr.reduce((a,b) => a.toString() + b.toString())
+    result = arr.reduce((final,number) => final.toString() + number.toString())
     return result
  }
  
@@ -19,7 +19,7 @@ function total(arr) {
  // 3. Turn an array of voter objects into a count of how many people voted
 
  function totalVotes(arr) {
-    result = arr.reduce((a,b) => a.voted - b.voted == true)
+    result = arr.reduce((final,current) => final.voted - current.voted == true)
     return result
  }
  
