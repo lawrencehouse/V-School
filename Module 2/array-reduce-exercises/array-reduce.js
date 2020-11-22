@@ -19,7 +19,12 @@ function total(arr) {
  // 3. Turn an array of voter objects into a count of how many people voted
 
  function totalVotes(arr) {
-    result = arr.reduce((a,b) => a.voted - b.voted == true)
+    result = arr.reduce((final,voter) => {
+        if (voter.voted){
+            final++
+        } 
+        return final
+    },0)
     return result
  }
  
@@ -38,3 +43,5 @@ function total(arr) {
      {name: 'Zack', age: 19, voted: false}
  ];
  console.log(totalVotes(voters)); // 7
+
+ // 4. 
