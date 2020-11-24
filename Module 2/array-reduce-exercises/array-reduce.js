@@ -1,3 +1,7 @@
+// # .reduce()
+//     Returns: Whatever you want it to! (See video for explanation)
+//     Purpose: Take an array of data and Reduce it into a smaller or completely different data set.
+
 // 1. Turn an array of numbers into a total of all the numbers
 
 function total(arr) {
@@ -44,4 +48,41 @@ function total(arr) {
  ];
  console.log(totalVotes(voters)); // 7
 
- // 4. 
+ // 4. Given an array of all your wishlist items, figure out how much it would cost to just buy everything at once
+
+ function shoppingSpree(arr) {
+    result = arr.reduce((final,item) => {
+        final += item.price
+        return final
+    },0)
+        return result
+ }
+ 
+ var wishlist = [
+     { title: "Tesla Model S", price: 90000 },
+     { title: "4 carat diamond ring", price: 45000 },
+     { title: "Fancy hacky Sack", price: 5 },
+     { title: "Gold fidgit spinner", price: 2000 },
+     { title: "A second Tesla Model S", price: 90000 }
+ ];
+ 
+ console.log(shoppingSpree(wishlist)); // 227005
+
+ // 5. Given an array of arrays, flatten them into a single array
+
+ function flatten(arr) {
+    result = arr.reduce((final,array) => {
+        final = array.concat(array[0])
+        return final
+    },[])
+        return result
+ }
+ 
+ var arrays = [
+     ["1", "2", "3"],
+     [true],
+     [4, 5, 6]
+ ];
+ 
+ console.log(flatten(arrays)); // ["1", "2", "3", true, 4, 5, 6];
+ 
