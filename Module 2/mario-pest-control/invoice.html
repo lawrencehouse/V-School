@@ -1,52 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pest Control Invoice</title>
     <link rel="stylesheet" href="invoice.css">
 </head>
+
 <body>
     <header>
         <h1>Mario Pest Control</h1>
         <h2>Enter in the amount of pests in each field.</h2>
+        <div id="line"></div>
     </header>
     <br>
     <form name="baddies">
-    <ul>
-        <li>
-            Goomba <br><br>
-            <img src="GoombaNSMB.webp" alt="" width="50px"> <br>
-            5 Coins each <br>
-            <input type="number" id="goom" size="3"> Caught
-        </li>
-        <br>
-        <li>
-            Bob-omb <br><br>
-            <img src="Bob-omb_(MKWii).webp" alt="" width="50px"> <br>
-            7 Coins each <br>
-            <input type="number" id="bob" size="3"> Caught
-        </li>
-        <br>
-        <li>
-            Cheep-cheeps <br><br>
-            <img src="Cheep_Cheep.webp" alt="" width="50px"> <br>
-            11 Coins each <br>
-            <input type="number" id="cheep" size="3"> Caught
-        </li>
-        <br>
-    </ul>
+        <ul>
+            <li>
+                Goomba <br><br>
+                <img src="GoombaNSMB.webp" alt="" width="50px"> <br>
+                5 Coins each <br>
+                <input type="number" id="goom" size="3"> Caught
+            </li>
+            <br>
+            <li>
+                Bob-omb <br><br>
+                <img src="Bob-omb_(MKWii).webp" alt="" width="50px"> <br>
+                7 Coins each <br>
+                <input type="number" id="bob" size="3"> Caught
+            </li>
+            <br>
+            <li>
+                Cheep-cheeps <br><br>
+                <img src="Cheep_Cheep.webp" alt="" width="50px"> <br>
+                11 Coins each <br>
+                <input type="number" id="cheep" size="3"> Caught
+            </li>
+            <br>
+        </ul>
     </form>
 
-    <u>Total:</u> <h3 id="total"></h3>
+    <div id="total2">
+        <u>Total:</u>
+        <h3 id="total"></h3>
+    </div>
+
     <footer>
         <h3>
-        <b>Contact US @</b> <br>
-        <b>pestparty@gmail.com</b> <br>
-        <b>mariopestcontrol.net</b> <br>
-        <b>25579 Sunshine St</b> <br>
-        </h3>   
+            <b>Contact US @</b> <br>
+            <b>pestparty@gmail.com</b> <br>
+            <b>mariopestcontrol.net</b> <br>
+            <b>25579 Sunshine St</b> <br>
+        </h3>
     </footer>
     <script src="invoice.js"></script>
 </body>
+
 </html>

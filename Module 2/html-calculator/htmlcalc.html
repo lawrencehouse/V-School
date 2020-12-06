@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple HTML Calc</title>
     <link rel="stylesheet" href="htmlcalc.css">
 </head>
+
 <body>
     <header>
         <h1>HTML Calculator</h1>
     </header>
-    <div>
-        <form name="add">
-            <h2>Addition Section</h2>
-            First Number: <input type="text" name="first" size="6"><br>
-            Second Number: <input type="text" name="second" size="6"><br>
-            <button type="submit">Submit</button>
-        </form>
+    <div id="content">
+        <div>
+            <form name="add">
+                <h2>Addition Section</h2>
+                First Number: <input type="text" name="first" size="6"><br>
+                Second Number: <input type="text" name="second" size="6"><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div>
+            <form name="sub">
+                <h2>Subtraction Section</h2>
+                First Number: <input type="text" name="first" size="6"><br>
+                Second Number: <input type="text" name="second" size="6"><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div>
+            <form name="multi">
+                <h2>Multiplication Section</h2>
+                First Number: <input type="text" name="first" size="6"><br>
+                Second Number: <input type="text" name="second" size="6"><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <h1 id="answer"></h1>
     </div>
-    <div>
-        <form name="sub">
-            <h2>Subtraction Section</h2>
-            First Number: <input type="text" name="first" size="6"><br>
-            Second Number: <input type="text" name="second" size="6"><br>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-    <div>
-        <form name="multi">
-            <h2>Multiplication Section</h2>
-            First Number: <input type="text" name="first" size="6"><br>
-            Second Number: <input type="text" name="second" size="6"><br>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-    <h1 id="answer"></h1>
+    <footer>
+        <h1>Made By: Lawrence House</h1>
+    </footer>
     <script src="calc.js"></script>
 </body>
+
 </html>

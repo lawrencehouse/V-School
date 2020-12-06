@@ -11,5 +11,31 @@ footer {
     text-align: center;
     position: absolute;
     bottom: 0;
-    width: 98%;
+    width: 99%;
+}
+
+#line {
+    border: 1px solid black;
+}
+
+@media (max-width: 700px) {
+    ul {
+        position: relative;
+        width: 25%;
+    }
+
+    img {
+        width: 35px;
+    }
+    
+    footer {
+        position: relative;
+        text-align: center;
+    }
+
+    #total2 {
+        position: absolute;
+        right: 100px;
+        bottom: 200px;
+    }
 }
