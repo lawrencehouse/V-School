@@ -1,11 +1,9 @@
-dog = 'dog'
-
 // 1a
 
 function sum(x, y) {
     try {
-        if ((typeof x != 'number') || (typeof y != 'number')) {
-            throw 'Both inputs must be numbers'
+        if ((!isNaN(x)) || (!isNaN(y))) {
+            throw new TypeError('Both inputs must be numbers')
         } else {
             console.log('Your code works fine!')
         }
@@ -20,6 +18,34 @@ function sum(x, y) {
 try {
     sum('1','2')
 } catch(err) {
-    console.log('test')
+    
 }
 
+// 2a
+
+var user = {username: "sam", password: "123abc"};
+function login(username, password){
+    try {
+        if ((username != user.username) || (password != user.password)) {
+            throw new SyntaxError('Username or Password does not match!')
+        } else {
+            console.log('login successful!')
+        }
+    } catch(err) {
+        console.log(err)
+    }
+}
+
+// 2b
+
+try {
+    login('saam','124abc')
+} catch {
+
+}
+
+try {
+    login('sam','123abc')
+} catch {
+    
+}
