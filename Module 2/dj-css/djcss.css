@@ -1,0 +1,122 @@
+#music {
+    position: relative;
+    left: 35%;
+}
+
+#dj0 {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    margin: auto;
+    border: 1px solid #333;
+    box-shadow: 10px 10px 5px 0 #999;
+    border-radius: 10%;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#dj0:hover {
+    box-shadow: none;
+    border-radius: 0;
+    background-color: cyan;
+}
+
+#dj1 {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    margin: auto;
+    border: 1px solid #333;
+    box-shadow: 10px 10px 5px 0 #999;
+    border-radius: 10%;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#dj1:hover {
+    width: 500px;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: sienna;
+}
+
+#dj2 {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    margin: auto;
+    border: 1px solid #333;
+    box-shadow: 10px 10px 5px 0 #999;
+    border-radius: 10%;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#dj2:hover {
+    height: 250px;
+    box-shadow: none;
+    border-radius: 50%;
+    background-color: chartreuse;
+}
+
+#dj3 {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    margin: auto;
+    border: 1px solid #333;
+    box-shadow: 10px 10px 5px 0 #999;
+    border-radius: 10%;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#dj3:hover {
+    width: 200px;
+    height: 200px;
+    box-shadow: none;
+    border-radius: 100%;
+    background-color: red;
+}
+
+#dj4 {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    margin: auto;
+    border: 1px solid #333;
+    box-shadow: 10px 10px 5px 0 #999;
+    border-radius: 10%;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#dj4:hover {
+    box-shadow: none;
+    border-radius: 0;
+    background-color: slateblue;
+}
+
+#dj5 {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    margin: auto;
+    border: 1px solid #333;
+    box-shadow: 10px 10px 5px 0 #999;
+    border-radius: 10%;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#dj5:hover {
+    box-shadow: none;
+    border-radius: 0;
+    background-color: palevioletred;
+}
