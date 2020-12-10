@@ -97,6 +97,7 @@
     transition: all 0.5s ease-in-out;
 }
 #dj4:hover {
+    width: 20px;
     box-shadow: none;
     border-radius: 0;
     background-color: slateblue;
@@ -116,6 +117,7 @@
     transition: all 0.5s ease-in-out;
 }
 #dj5:hover {
+    height: 40px;
     box-shadow: none;
     border-radius: 0;
     background-color: palevioletred;
