@@ -1,4 +1,6 @@
-* {box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
 #title {
     font-size: 51px;
@@ -43,7 +45,7 @@ header {
     background-color: aquamarine;
 }
 
-@media (max-width: 400px){
+@media (max-width: 700px){
     /* use this media query to help these two cells drop to the bottom when screens are smaller */
     .authors {
          grid-row: 9;
