@@ -72,4 +72,34 @@ printString = (firstName, lastName, age) => `Hi ${firstName} ${lastName}, how do
 
 console.log(printString('Kat','Stark',40))
 
-// Task 5: 
+// Task 5: Shorthand Syntax
+
+const animals = [
+    {
+        type: "dog",
+        name: "theodore"
+    },
+    {
+        type: "cat",
+        name: "whiskers"
+    },
+    {
+        type: "pig",
+        name: "piglette"
+    },
+    {
+        type: "dog",
+        name: "sparky"
+    }
+ ];
+ 
+filterForDogs = arr => arr.filter(animal => animal.type == 'dog')
+
+console.log(filterForDogs(animals))
+
+// Template literals
+
+welcomeMessage = (location,name) => `Hi ${name}!\n\nWelcome to ${location}.\n\n
+I hope you enjoy your stay. Please ask the president of ${location} if you need anything.`
+
+console.log(welcomeMessage('alaska', 'tre'))
