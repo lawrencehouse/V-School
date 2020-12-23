@@ -1,24 +1,61 @@
-// Task 1
+// Task 1 Green
 
-function collectAnimals(/*your code here*/) {  
-    /*and here*/ 
-}
+collectAnimals = (...animals) => animals
 
-collectAnimals("dog", "cat", "mouse", "jackolope", "platypus"); 
+console.log(collectAnimals("dog", "cat", "mouse", "jackolope", "platypus"))
 // ["dog", "cat", "mouse", "jackolope", "platypus"]
 
-// Task 2
+// Task 2 Green
 
-function combineFruit(fruit, sweets, vegetables){
-    return {}
-}
+combineFruit = (fruit, sweets, vegetables) => 
+    ({
+        fruit: fruit,
+        sweets: sweets,
+        vegetables: vegetables
+    })
 
-combineFruit(["apple", "pear"],
+
+console.log(combineFruit(["apple", "pear"],
              ["cake", "pie"],
-             ["carrot"])
+             ["carrot"]))
 /*=> {
         fruit: ["apple", "pear"],
         sweets: ["cake", "pie"],
         vegetables: ["carrot"]
      }
 */
+
+// Task 3 Green
+
+const vacation = {  
+    location: "Burly Idaho",
+    duration: "2 weeks"
+  };
+
+const {location,duration} = vacation
+  
+  function parseSentence(_________){
+    return `We're going to have a good time in ${location} for ${duration}`
+  }
+
+  console.log(parseSentence(vacation))
+
+// Task 4 Green
+
+function returnFirst(items){
+    const [firstItem] = items /*change this line to be es6*/
+    return firstItem
+}
+
+
+// Task 5 Blue
+
+combineAnimals = (...arrays) => arrays
+
+const realAnimals = ["dog", "cat", "mouse"];
+const magicalAnimals = ["jackolope"];
+const mysteriousAnimals = ["platypus"];
+
+console.log(combineAnimals(realAnimals, magicalAnimals, mysteriousAnimals)) 
+
+// ["dog", "cat", "mouse", "jackolope", "platypus"]
