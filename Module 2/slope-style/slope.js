@@ -47,15 +47,38 @@ function returnFirst(items){
     return firstItem
 }
 
+// Task 5 Green
 
-// Task 5 Blue
+const favoriteActivities = ["magnets", "snowboarding", "philanthropy", "janitor work", "eating"];
 
-combineAnimals = (...arrays) => arrays
+function returnFavorites(arr){
+    const [firstFav, secondFav, thirdFav] = arr
+    return `My top three favorite activities are ${firstFav}, ${secondFav}, and ${thirdFav}`
+}
+
+console.log(returnFavorites(favoriteActivities))
+
+// Task 6 Blue
+
+combineAnimals = (...array) => array
 
 const realAnimals = ["dog", "cat", "mouse"];
 const magicalAnimals = ["jackolope"];
 const mysteriousAnimals = ["platypus"];
 
-console.log(combineAnimals(realAnimals, magicalAnimals, mysteriousAnimals)) 
+arr1 = [...realAnimals, ...magicalAnimals, ...mysteriousAnimals]
+
+console.log(combineAnimals(arr1)) 
 
 // ["dog", "cat", "mouse", "jackolope", "platypus"]
+
+// Task 7 Black diamond
+
+function product(a, b, c, d, e) {  
+    var numbers = [a,b,c,d,e];
+  
+    return numbers.reduce(function(acc, number) {
+      return acc * number;
+    }, 1)
+  }
+  
