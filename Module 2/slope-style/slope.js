@@ -74,11 +74,36 @@ console.log(combineAnimals(arr1))
 
 // Task 7 Black diamond
 
-function product(a, b, c, d, e) {  
-    var numbers = [a,b,c,d,e];
+product = (...numbers) => {  
+    let numberSet = numbers
   
-    return numbers.reduce(function(acc, number) {
-      return acc * number;
-    }, 1)
+    return numberSet.reduce((acc, number) => acc * number, 1)
   }
-  
+
+console.log(product(3,3,3,3,3,2))
+
+// Task 8 Black Diamond
+
+unshift = (array,...otherVariables) => [...otherVariables,...array] 
+
+console.log(unshift([6,6],3,3,3,3,3))
+
+// Task 9 Double Black Diamond
+
+function populatePeople(names){
+    return names.map(function(name){
+        name = name.split(" ");
+        // your code
+        return {
+            firstName: firstName,
+            lastName: lastName
+        }
+    })
+}
+
+populatePeople(["Frank Peterson", "Suzy Degual", "Liza Jones"])
+//[
+//  {firstName: "Frank", lastName: "Peterson"},
+//  {firstName: "Suzy", lastName: "Degual"},
+//  {firstName: "Liza", lastName: "Jones"},
+//]
