@@ -1,0 +1,42 @@
+{
+    "menu": [
+        {
+            "appetizers": [
+                {
+                    "Cookies": {
+                        "Name": "Cookies",
+                        "Ingredients": [
+                            "Chocolate Chips",
+                            "flour",
+                            "baking soda"
+                        ],
+                        "description": "Your usual oven baked chocolate chip cookies."
+                    },
+                    "Potato Chips": {
+                        "Name": "Potato Chips",
+                        "Ingredients": [
+                            "Highly processed potatoes",
+                            "dyxlhydralineate",
+                            "salt"
+                        ],
+                        "description": "Your usual processed root veggie chips"
+                    }
+                }
+            ],
+            "cold sandwiches": [{
+                "Italian": {
+                    "Name": "Italian",
+                    "Ingredients": [
+                        "white bread",
+                        "salami",
+                        "Mayo"
+                    ],
+                    "description": "An amalgamation of bread, salami and mayo."
+                },
+                "dagwood": {
+                    
+                }
+            }]
+        }
+    ]
+}
