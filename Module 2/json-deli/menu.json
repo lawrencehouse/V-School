@@ -33,9 +33,36 @@
                     ],
                     "description": "An amalgamation of bread, salami and mayo."
                 },
-                "dagwood": {
-                    
+                "Dagwood": {
+                    "Name": "Dagwood",
+                    "Ingredients": [
+                        "white bread",
+                        "salt",
+                        "Mayo",
+                        "kitchen sink"
+                    ],
+                    "description": "The most coveted sandwich for a man of means"
                 }
+            }],
+            "hot sandwiches": [{
+                "Meatball sub": {
+                    "Name": "Meatball sub",
+                    "Ingredients": [
+                        "wheat hoagie",
+                        "chicken meatballs",
+                        "tomato based sauce"
+                    ],
+                    "description": "Meatballs boiled in sauce on a wheat hoagie"
+                },
+                "turkey BLT": {
+                    "Name": "Turkey BLT",
+                    "Ingredients": [
+                        
+                    ]
+                }
+            }],
+            "desserts": [{
+                ""
             }]
         }
     ]
