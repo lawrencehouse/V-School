@@ -21,87 +21,95 @@
                     }
                 }
             ],
-            "cold sandwiches": [{
-                "Italian": {
-                    "Name": "Italian",
-                    "Ingredients": [
-                        "white bread",
-                        "salami",
-                        "Mayo"
-                    ],
-                    "description": "An amalgamation of bread, salami and mayo."
-                },
-                "Dagwood": {
-                    "Name": "Dagwood",
-                    "Ingredients": [
-                        "white bread",
-                        "salt",
-                        "Mayo",
-                        "kitchen sink"
-                    ],
-                    "description": "The most coveted sandwich for a man of means."
+            "cold sandwiches": [
+                {
+                    "Italian": {
+                        "Name": "Italian",
+                        "Ingredients": [
+                            "white bread",
+                            "salami",
+                            "Mayo"
+                        ],
+                        "description": "An amalgamation of bread, salami and mayo."
+                    },
+                    "Dagwood": {
+                        "Name": "Dagwood",
+                        "Ingredients": [
+                            "white bread",
+                            "salt",
+                            "Mayo",
+                            "kitchen sink"
+                        ],
+                        "description": "The most coveted sandwich for a man of means."
+                    }
                 }
-            }],
-            "hot sandwiches": [{
-                "Meatball sub": {
-                    "Name": "Meatball sub",
-                    "Ingredients": [
-                        "wheat hoagie",
-                        "chicken meatballs",
-                        "tomato based sauce"
-                    ],
-                    "description": "Meatballs boiled in sauce on a wheat hoagie."
-                },
-                "turkey BLT": {
-                    "Name": "Turkey BLT",
-                    "Ingredients": [
-                        "turkey bacon",
-                        "lettuce",
-                        "tomato"
-                    ],
-                    "description": "A halal hot BLT sandwich."
+            ],
+            "hot sandwiches": [
+                {
+                    "Meatball sub": {
+                        "Name": "Meatball sub",
+                        "Ingredients": [
+                            "wheat hoagie",
+                            "chicken meatballs",
+                            "tomato based sauce"
+                        ],
+                        "description": "Meatballs boiled in sauce on a wheat hoagie."
+                    },
+                    "turkey BLT": {
+                        "Name": "Turkey BLT",
+                        "Ingredients": [
+                            "turkey bacon",
+                            "lettuce",
+                            "tomato"
+                        ],
+                        "description": "A halal hot BLT sandwich."
+                    }
                 }
-            }],
-            "desserts": [{
-                "Cookies": {
-                    "Name": "Cookies",
-                    "Ingredients": [
-                        "Chocolate Chips",
-                        "flour",
-                        "baking soda"
-                    ],
-                    "description": "Your usual oven baked chocolate chip cookies."
-                },
-                "apple pie": {
-                    "Name": "Apple Pie",
-                    "Ingredients": [
-                        "granny smith apples",
-                        "whole wheat pie shell",
-                        "butter"
-                    ],
-                    "description": "A wholesome apple pie with lattice crust."
+            ],
+            "desserts": [
+                {
+                    "Cookies": {
+                        "Name": "Cookies",
+                        "Ingredients": [
+                            "Chocolate Chips",
+                            "flour",
+                            "baking soda"
+                        ],
+                        "description": "Your usual oven baked chocolate chip cookies."
+                    },
+                    "apple pie": {
+                        "Name": "Apple Pie",
+                        "Ingredients": [
+                            "granny smith apples",
+                            "whole wheat pie shell",
+                            "butter"
+                        ],
+                        "description": "A wholesome apple pie with lattice crust."
+                    }
                 }
-            }],
-            "drinks": [{
-                "iced caramel latte": {
-                    "Name": "iced caramel latte",
-                    "Ingredients": [
-                        "caramel syrup",
-                        "espresso",
-                        "2% milk"
-                    ],
-                    "description": "A sugar-filled but low fat coffee delight!"
-                },
-                "coca-cola": {
-                    "Name": "coca-cola",
-                    "Ingredients": [
-                        "cola syrup",
-                        "corn syrup",
-                        "carbonated water"
-                    ],
-                    "description": "Highly addictive cola syrup crossed with super spiked corn syrup = delicious flavorful cocktail"
+            ],
+            "drinks": [
+                {
+                    "iced caramel latte": {
+                        "Name": "iced caramel latte",
+                        "Ingredients": [
+                            "caramel syrup",
+                            "espresso",
+                            "2% milk"
+                        ],
+                        "description": "A sugar-filled but low fat coffee delight!"
+                    },
+                    "coca-cola": {
+                        "Name": "coca-cola",
+                        "Ingredients": [
+                            "cola syrup",
+                            "corn syrup",
+                            "carbonated water"
+                        ],
+                        "description": "Highly addictive cola syrup crossed with super spiked corn syrup = delicious flavorful cocktail"
+                    }
                 }
-            }]
+            ]
         }
     ]
 }
