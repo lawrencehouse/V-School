@@ -3,14 +3,12 @@
         {
             "appetizers": [
                 {
-                    "Cookies": {
-                        "Name": "Cookies",
+                    "tomato soup": {
+                        "Name": "Tomato Soup",
                         "Ingredients": [
-                            "Chocolate Chips",
-                            "flour",
-                            "baking soda"
+                            "tomato "
                         ],
-                        "description": "Your usual oven baked chocolate chip cookies."
+                        "description": ""
                     },
                     "Potato Chips": {
                         "Name": "Potato Chips",
@@ -19,7 +17,7 @@
                             "dyxlhydralineate",
                             "salt"
                         ],
-                        "description": "Your usual processed root veggie chips"
+                        "description": "Your usual processed root veggie chips."
                     }
                 }
             ],
@@ -41,7 +39,7 @@
                         "Mayo",
                         "kitchen sink"
                     ],
-                    "description": "The most coveted sandwich for a man of means"
+                    "description": "The most coveted sandwich for a man of means."
                 }
             }],
             "hot sandwiches": [{
@@ -52,17 +50,57 @@
                         "chicken meatballs",
                         "tomato based sauce"
                     ],
-                    "description": "Meatballs boiled in sauce on a wheat hoagie"
+                    "description": "Meatballs boiled in sauce on a wheat hoagie."
                 },
                 "turkey BLT": {
                     "Name": "Turkey BLT",
                     "Ingredients": [
-                        
-                    ]
+                        "turkey bacon",
+                        "lettuce",
+                        "tomato"
+                    ],
+                    "description": "A halal hot BLT sandwich."
                 }
             }],
             "desserts": [{
-                ""
+                "Cookies": {
+                    "Name": "Cookies",
+                    "Ingredients": [
+                        "Chocolate Chips",
+                        "flour",
+                        "baking soda"
+                    ],
+                    "description": "Your usual oven baked chocolate chip cookies."
+                },
+                "apple pie": {
+                    "Name": "Apple Pie",
+                    "Ingredients": [
+                        "granny smith apples",
+                        "whole wheat pie shell",
+                        "butter"
+                    ],
+                    "description": "A wholesome apple pie with lattice crust."
+                }
+            }],
+            "drinks": [{
+                "iced caramel latte": {
+                    "Name": "iced caramel latte",
+                    "Ingredients": [
+                        "caramel syrup",
+                        "espresso",
+                        "2% milk"
+                    ],
+                    "description": "A sugar-filled but low fat coffee delight!"
+                },
+                "coca-cola": {
+                    "Name": "coca-cola",
+                    "Ingredients": [
+                        "cola syrup",
+                        "corn syrup",
+                        "carbonated water"
+                    ],
+                    "description": "Highly addictive cola syrup crossed with super spiked corn syrup = delicious flavorful cocktail"
+                }
             }]
         }
     ]
