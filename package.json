@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/outordinary1/V-School#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "readline-sync": "^1.4.10"
   }
 }
