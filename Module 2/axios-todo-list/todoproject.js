@@ -3,8 +3,10 @@
 // axios.post('https://api.vschool.io/lawrencehouse/todo', )
 
 axios.get('https://api.vschool.io/lawrencehouse/todo')
+
     .then(res => {
         console.log(res)
+        todolist = document.getElementById('todolist')
         for (i=0; res.data.length; i++) {
             const h2 = document.createElement('h2')
             if (res.data[i].completed) {
@@ -24,3 +26,19 @@ axios.get('https://api.vschool.io/lawrencehouse/todo')
     //     document.body.appendChild(h2)
     // }))
     .catch(err => console.log(err))
+
+todoForm.addEventListener("submit", function(event){
+    event.preventDefault()
+    
+    const newTodo = {
+        title: todoForm.title.value,
+        price: todoForm.price.value,
+        description: todoForm.description.value,
+        imgUrl: todoForm.imgUrl.value
+    }
+    
+    axios.post("https://api.vschool.io/lawrencehouse/todo", newTodo)
+        .then(response => console.log(response.data))
+        .catch(error => console.log(error))
+    
+})

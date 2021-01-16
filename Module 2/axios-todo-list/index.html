@@ -8,24 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="main-todo-input-wrap">
-                <div class="main-todo-input fl-wrap">
-                    <div class="main-todo-input-item"> <input type="text" id="todo-list-item" placeholder="What will you do today?"> </div> <button class="add-items main-search-button">ADD</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="main-todo-input-wrap">
-                <div class="main-todo-input fl-wrap todo-listing">
-                    <ul id="list-items"></ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    <form name="todoForm">
+        <input name="title" placeholder="Title"/><br>
+        <input name="price" placeholder="Price"><br>
+        <input name="description" placeholder="Description"/><br>
+        <input name="imgUrl" placeholder="Image Url"/><br>
+        <button>Submit</button>
+    </form>
+    <ul id="todolist">
+        
+    </ul>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"></script>
     <script src="todoproject.js"></script>
 </body>
