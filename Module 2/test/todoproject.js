@@ -11,12 +11,14 @@ grabData = () => {
 listOfTodos = data => {
     todolist = document.getElementById('todolist')
 
+    todolist.innerHTML = ''
+
     for (i=0; data.length; i++) {
-        const checkbox = document.createElement("INPUT")
-        checkbox.type = 'checkbox'
-        checkbox.id = `completed_box${i}`
         const li = document.createElement('li')
         li.innerHTML += ``
+        const checkbox = document.createElement("INPUT")
+        checkbox.type = 'checkbox'
+        checkbox.id = `completed_box${i}`        
         const deleteBtn= document.createElement('button') 
         deleteBtn.textContent="DELETE";
         deleteBtn.value = 'delete';
@@ -44,8 +46,6 @@ listOfTodos = data => {
                     completed: false
                 }
             }
-
-
             
             axios.put(`https://api.vschool.io/lawrencehouse/todo/${id}`, updates)
                 .then(res => res.data)
@@ -53,14 +53,14 @@ listOfTodos = data => {
         })   
 
         deleteBtn.addEventListener('click', function(){
-            console.log('delete button was clicked');
-            id = data[i]._id;
+            console.log('delete button was clicked')
+            id = data[i]._id
             url = `https://api.vschool.io/lawrencehouse/todo/${id}`
             axios.delete(url)
-              .then(response => console.log(response.data))
-              .then(error => console.log(error));
+              .then(res => console.log(res.data))
+              .then(error => console.log(error))
     
-            location.reload();
+            location.reload()
         })
     }
 }
