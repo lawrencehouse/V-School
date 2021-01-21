@@ -44,6 +44,7 @@ header {
 
 .footer {
     /* make these span the width of the page */
+    display: grid;
     grid-column: 1/-1;
     text-align: center;
     background-color: aquamarine;
@@ -67,11 +68,12 @@ header {
     }
 
     .footer {
-        grid-row: 7;
+        grid-row: 3;
+        
     }
 
     .footer .icons {
-        grid-row: 8;
+        grid-row: 4;
     }
 
     .authors {
