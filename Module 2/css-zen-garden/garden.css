@@ -65,7 +65,7 @@ header {
 }
 
 .authors {
-    background-color: rgba(229, 237, 232, 0.9)
+    background-color: rgba(229, 237, 232, 0.9);
 }
 
 .authors ul {
@@ -77,7 +77,7 @@ header {
 }
 
 .authors li {
-    padding: 1.5em 10%;
+    padding: 1.0em 10%;
     border-top: solid 1px #d9e3dc;
     font-style: italic;
     color: #c0cac3;
@@ -137,7 +137,7 @@ footer {
 
 .footer h2 {
     color: rgba(255, 255, 255, 0.65);
-    padding: 100px;
+    padding: 80px;
 }
 
 
@@ -194,5 +194,7 @@ footer {
     height: 70px;
     background-color: #134347;
     border-radius: 50%;
-    border: solid rgba(255, 255, 255, 0.5);;
+    border: solid rgba(255, 255, 255, 0.5);
+    padding-top: 0;
+    padding-bottom: 0;
 }
