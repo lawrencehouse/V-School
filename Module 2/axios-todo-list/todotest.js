@@ -26,7 +26,6 @@ form.addEventListener('submit', (e) => {
  axios.post('https://api.vschool.io/lawrencehouse/todo/', newToDo)
   .then(response => getData())
   .catch(error => console.log(error))
- 
 })
 
 // posts the data 
@@ -80,7 +79,6 @@ function renderTodo(data){
     displayBox.appendChild(htitle) 
     displayBox.appendChild(checkQuestion)
     displayBox.appendChild(check);
-    // displayBox.appendChild(edit);
     displayBox.appendChild(deleteBtn);
     displayBox.appendChild(hprice);
     displayBox.appendChild(hdescription);

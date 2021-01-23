@@ -1,8 +1,7 @@
 // 1. Given an array of numbers, return a new array that has only the numbers that are 5 or greater.
 
 function fiveAndGreaterOnly(arr) {
-    result = arr.filter(number => number >= 5)
-    return result
+    return arr.filter(number => number >= 5) 
   }
 
   // test
@@ -47,10 +46,8 @@ function fiveAndGreaterOnly(arr) {
   
 // 5. Make a filtered list of all the people who are old enough to see The Matrix (older than 18)
 
-function ofAge(arr){
-  result = arr.filter(person => person.age > 18)
-  return result
-}
+const ofAge = arr => arr.filter(person => person.age > 18)
+  
 // test
 console.log(ofAge([
     { name: "Angelina Jolie", age: 80 },
