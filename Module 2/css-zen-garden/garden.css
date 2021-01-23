@@ -140,43 +140,8 @@ footer {
     padding: 80px;
 }
 
-
-@media (max-width: 1100px){
-    /* use this media query to help these two cells drop to the bottom when screens are smaller */
-
-    #one {
-        position: absolute;
-        text-align: center;
-        grid-row: 1;
-        width: 100%;
-    }
-
-    #two {
-        position: absolute;
-        text-align: center;
-        grid-row: 2;
-        width: 100%;
-    }
-
-    .footer {
-        grid-row: 3;
-    }
-
-    .footer .icons {
-        grid-row: 4;
-    }
-
-    .authors {
-         grid-row: 9;
-    }
-    .links {
-        grid-row: 10;
-    }
-    /* container could use some help so that it's children are full screen width */
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(10);       
-    }
+.footer {
+    text-align: center;
 }
 
 /* FLEX */
@@ -198,3 +163,76 @@ footer {
     padding-top: 0;
     padding-bottom: 0;
 }
+
+@media (max-width: 1100px){
+    /* use this media query to help these two cells drop to the bottom when screens are smaller */
+
+    #one {
+        position: relative;
+        text-align: center;
+        left: 150px;
+        grid-row: 1;
+        width: 100%;
+    }
+
+    #two {
+        position: relative;
+        text-align: center;
+        grid-row: 2;
+        width: 100%;
+    }
+
+    .container {
+        font-size: 1.1em;
+    }
+
+    .container p {
+        padding-left: 70px;
+        padding-right: 50px;
+    }
+    
+    .container h2 {
+        padding-left: 70px;
+        padding-right: 50px;
+    }
+
+    .container div {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .empty {
+        position: absolute;
+    }
+
+    .footer {
+        grid-row: 3;
+    }
+
+    .footer1 {
+        grid-row: 4;
+    }
+
+    .authors {
+         grid-row: 9;
+    }
+    .links {
+        grid-row: 10;
+    }
+
+    .icons {
+        width: 100%;
+        
+    }
+
+    .icons div {
+        width: 60px;
+        height: 20px;
+    }
+    /* container could use some help so that it's children are full screen width */
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10);       
+    }
+}
+
