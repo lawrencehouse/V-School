@@ -1,11 +1,14 @@
 import React from "react"
+import friends from "./Friends"
+import Friend from "./Friend"
 
 function App() {
-  return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
-  )
+    const FriendList = friends.map(friend => <Friend name={friend.name} age={friend.age} />)
+    return (
+        <div>
+            {FriendList}
+        </div>
+    )
 }
 
 export default App;
