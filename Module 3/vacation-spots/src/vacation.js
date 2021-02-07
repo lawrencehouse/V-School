@@ -13,6 +13,7 @@ const Card = (props) => {
             <h1>Escape away to <b><i>{props.place}</i></b>!</h1>
             <h2>Cost: {props.price}</h2>
             <h2>The best time to go is in {props.goTime}</h2>
+            <br />
         </div>
     )
 }
