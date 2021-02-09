@@ -1,14 +1,17 @@
+import React from "react"
+
 const BlogList = () => (
-    <p></p>
+    <BlogPost />
 )
 
-const blogPost = (props) => (
+const BlogPost = (props) => {
+    return (
     <div>
         <p>{props.title}</p>
-        <p></p>
-        <p></p>
-        <p></p>
+        <p>{props.subTitle}</p>
+        <p>{props.author}</p>
+        <p>{props.date}</p>
     </div>
-)
+)}
 
-export default blogPost
+export {BlogList,BlogPost}
