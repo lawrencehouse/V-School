@@ -1,13 +1,19 @@
 const Header = () => (
-    <header>
-        <h1>Start Bootstrap</h1>
-        <Navbar />
+    <header className="header">
+        <div className="overlay"></div>
+        <div className="header-div0">
+            <h2 className="title">Start Bootstrap</h2>
+            <Navbar />
+        </div>
+        <div className="header-div1">
+            <h1>Clean Blog</h1>
+            <span>A Blog Theme by Start Bootstrap</span>
+        </div>
     </header>
 )
 
 const Navbar = () => (
     <div className="navbar">
-        <a href="/title/">Start Bootstrap</a>
         <div>
         <nav>
             <a href="/home/">HOME</a> |

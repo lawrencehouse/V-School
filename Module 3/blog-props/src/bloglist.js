@@ -7,10 +7,10 @@ const BlogList = () => (
 const BlogPost = (props) => {
     return (
     <div>
-        <p>{props.title}</p>
-        <p>{props.subTitle}</p>
-        <p>{props.author}</p>
-        <p>{props.date}</p>
+        <h2>{props.title}</h2>
+        <h3>{props.subTitle}</h3>
+        <p className="posted">Posted by <a href="#">{props.author}</a> on {props.date}</p>
+        <hr />
     </div>
 )}
 
