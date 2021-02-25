@@ -17,17 +17,29 @@ class App extends Component {
     constructor() {
         super()
         this.state = {
-            colors: ['white', 'white', 'white', 'white']
+            colors: ['white', 'black', 'blue', 'white']
         }
+        this.djSmall = this.djSmall.bind(this)
+    }
+
+    djSmall() {
+        this.setState(prevState => {
+            return {
+                colors: prevState.count + 1
+            }
+        })
     }
 
     render() {
-        const squares = this.state.colors.map(color => <Square color={this.state.color}/>)
+        const squares = this.state.colors.map(color => <Square color={color}/>)
         
-
-        return (
-            <div>
+        return (   
+            <div className="App">
                 {squares}
+                <button>DJ Small</button>
+                <button>Party DJ</button>
+                <button>Left Blue</button>
+                <button>Right Blue</button>
             </div>
         )
     }
