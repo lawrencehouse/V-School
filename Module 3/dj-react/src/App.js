@@ -2,17 +2,6 @@ import './App.css';
 import Square from './squares'
 import { Component } from 'react';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <h1 className='square'></h1>
-//       <h1 className='square'></h1>
-//       <h1 className='square'></h1>
-//       <h1 className='square'></h1>
-//     </div>
-//   );
-// }
-
 class App extends Component {
     constructor() {
         super()
