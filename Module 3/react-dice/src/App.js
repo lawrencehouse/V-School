@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import './App.css';
+import DiceBox from './dicebox'
 
 class App extends Component {
     constructor(){
@@ -22,10 +23,11 @@ class App extends Component {
 
     render() {
         
-
+        const dice = <DiceBox
         return (
             <div className="App">
                 <button onClick={this.diceRoll}>Roll Dice</button>
+                {DiceBox}
             </div>
           )
     }
